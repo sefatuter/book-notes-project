@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: Georgia,serif;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: #fff;
+}
+
+p {
+    color: azure;
+}
+
+a {
+    text-decoration: none;
+    color: #20b;
+    overflow-wrap: break-word;
+    word-wrap: break-word
+}
+
+section {
+    margin-bottom: 4em
+}
+
+main {
+    background-color: black;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+footer {
+  flex: 0 0 auto;
+  text-align: center;
+}
