@@ -18,34 +18,28 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+app.get("/", async (req, res) => {
+  const imgs = await getBookById();
 
-
-app.get("/", async (req,res) => {
-
-    const imgs = await getBookById();
-
-    console.log(imgs);
-    res.render("index.ejs", { imgs });
+  console.log(imgs);
+  res.render("index.ejs", { imgs });
 });
 
-
-
 async function getBookById() {
-    try {
-        const result = await db.query("SELECT id_num FROM books");
-        let bookImg = [];
-        
-        console.log(result.rows);
+  try {
+    const result = await db.query("SELECT id_num FROM books");
+    let bookImg = [];
 
-        result.rows.forEach((id) => {
-            bookImg.push(id.id_num);
-          });
+    console.log(result.rows);
 
-        return bookImg;
-    } catch (error) {
-        console.log(error);
-    }
-    
+    result.rows.forEach((id) => {
+      bookImg.push(id.id_num);
+    });
+
+    return bookImg;
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 
@@ -55,11 +49,6 @@ async function getBookById() {
 
 
 
-
-
-
-
 app.listen(port, () => {
-    console.log(`Server running on port http://localhost:${port}`);
-  });
-  
+  console.log(`Server running on port http://localhost:${port}`);
+});
