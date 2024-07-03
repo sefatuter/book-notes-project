@@ -6,16 +6,73 @@ body {
     background-color: #fff;
 }
 
+.wittgenstein {
+  font-family: "Wittgenstein", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
 
 main h1 {
-    color: blanchedalmond;
+    color: #c4be83;
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 60px;
+    margin-top: 1%;
+    text-align: justify;
+    display:  inline-block;
+    text-align:  justify;
+    left: 50%;
+    top: 25%;
+    width:48%;
+    height:25%;
+    z-index: 1000;
+    margin-left: 25%;
+}
 
+#h2title {
+    color: #c4be83;
+    opacity: 50%;
+    text-align: center;
+    font-size: 30px;
+
+    text-align: justify;
+    display:  inline-block;
+    text-align:  justify;
+    left: 50%;
+    top: 25%;
+    width: 25%;
+    z-index: 1000;
+    margin-left: 25%;
+    margin-bottom: 20px;
+}
+
+main hr {
+    color: white;
+    opacity: 15%;
+}
+
+main h4 {
+    color: white;
+    font-size: large;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: justify;
+    display:  inline-block;
+    text-align:  justify;
+    left: 50%;
+    top: 25%;
+    width:48%;
+    height:25%;
+    z-index: 1000;
+    margin-left: 25%;
+    margin-bottom: 20px;
+   
 }
 
 main {
     display: block;
     unicode-bidi: isolate;
+    
 }
 
 html {
@@ -31,16 +88,6 @@ html {
     justify-content: center;
 }
 
-.container h2 h3 h1 {
-    font-size: 1.5em;
-    margin-top: 2em;
-    line-height: 1em;
-}
-
-#h2title {
-    color: antiquewhite;
-    text-align: center;
-}
 
 .container img {
     /* margin-top: 40px;
@@ -68,12 +115,10 @@ html {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-    outline: 1px solid #ac050b !important;
 }
 
 .container a {
     text-decoration: none;
-    color: green;
     overflow-wrap: break-word;
     word-wrap: break-word
 }
