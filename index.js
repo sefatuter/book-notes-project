@@ -20,10 +20,29 @@ app.use(express.static("public"));
 
 app.get("/", async (req, res) => {
   const imgs = await getBookById();
+  const desc = await getDescription();
 
   console.log(imgs);
-  res.render("index.ejs", { imgs });
+  console.log(desc.rows);
+  res.render("index.ejs", { imgs: imgs, description: desc });
 });
+
+async function getDescription() {
+  try {
+    const result = await db.query("SELECT description FROM books");
+    let description = [];
+
+    console.log(result.rows);
+
+    result.rows.forEach((id) => {
+      description.push(id.description);
+    });
+
+    return description;
+  } catch (error) {
+    console.log(error);
+  }
+}
 
 async function getBookById() {
   try {
@@ -41,13 +60,6 @@ async function getBookById() {
     console.log(error);
   }
 }
-
-
-
-
-
-
-
 
 app.listen(port, () => {
   console.log(`Server running on port http://localhost:${port}`);
