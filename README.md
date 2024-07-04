@@ -3,24 +3,25 @@
 Technologies used: Javascript, EJS, HTML, CSS, Bootstrap, Node.js, MySQL
 
 - Used Open Library Covers API to fetch book covers.
+- Used axios, body-parser, ejs, express, pg packages.
 - Created database to store books.
   
-- ```
-  CREATE DATABASE "book-notes"; 
-  ```
+```
+CREATE DATABASE "book-notes"; 
+```
   
-- ```
-  \c "book-notes"
-  ```
+```
+\c "book-notes"
+```
   
-- ```
-  CREATE TABLE books (
-    id SERIAL PRIMARY KEY,
-    book_name VARCHAR(255),
-    id_num VARCHAR(50),
-    description TEXT
-  );
-  ```
+```
+CREATE TABLE books (
+  id SERIAL PRIMARY KEY,
+  book_name VARCHAR(255),
+  id_num VARCHAR(50),
+  description TEXT
+);
+```
 
   
 ## Running website
