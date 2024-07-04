@@ -49,45 +49,45 @@ Change This Part According To Your Information
 
 **1. Retrieve All Books**
 
-Endpoint : ```GET /books```
+- Endpoint : ```GET /books```
 
 ```
 GET http://localhost:3000/api/books
 ```
-Response:
-    - Status: '200 OK'
-    - Body:
-        
-        ```
-        [
-            {
-                "book_name": "Çalıkuşu"
-            },
-            ...
-        ]
-        ```
+- Response:
+  - Status: '200 OK'
+  - Body:
+      
+      ```
+      [
+          {
+              "book_name": "Çalıkuşu"
+          },
+          ...
+      ]
+      ```
  
 
 **2. Retrieve All Book Descriptions**
 
-Endpoint : ```GET /descriptions```
+- Endpoint : ```GET /descriptions```
 
 ```
 GET http://localhost:3000/api/descriptions
 ```
 
-Response:
-    - Status: '200 OK'
-    - Body:
-        
-        ```
-        [
-            {
-                "description": "Çalıkuşu by Reşat Nuri Güntekin is a beloved Turkish classic that transports readers to"
-            },
-            ...
-        ]
-        ```
+- Response:
+  - Status: '200 OK'
+  - Body:
+      
+      ```
+      [
+          {
+              "description": "Çalıkuşu by Reşat Nuri Güntekin is a beloved Turkish classic that transports readers to ..."
+          },
+          ...
+      ]
+      ```
 
 - ![1](https://github.com/sefatuter/book-notes-project/assets/95074982/d808e080-27dc-41e1-86a4-18abdf7212af)
 
