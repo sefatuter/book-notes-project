@@ -89,7 +89,10 @@ GET http://localhost:3000/api/descriptions
       ]
       ```
 
-- ![1](https://github.com/sefatuter/book-notes-project/assets/95074982/d808e080-27dc-41e1-86a4-18abdf7212af)
+      
+
+![1](https://github.com/sefatuter/book-notes-project/assets/95074982/d808e080-27dc-41e1-86a4-18abdf7212af)
 
 
-- ![2](https://github.com/sefatuter/book-notes-project/assets/95074982/3e67b3e5-f1d2-44ca-84ab-125c76b18dba)
+
+![2](https://github.com/sefatuter/book-notes-project/assets/95074982/3e67b3e5-f1d2-44ca-84ab-125c76b18dba)
